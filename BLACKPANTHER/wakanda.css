@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+    color: #FFFFFF;
+    margin: 0px;
+    padding: 0px;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    font-size: small;
+
+}
+body{
+    background-color: #070d18;
+    background-repeat: repeat;
+    background-image: linear-gradient(110deg, #11213F 0%, #070d18 30%, #070d18 50%, #021740 70%);
+    display: flex;
+    flex-direction: column;
+}
+header{
+    position: relative;
+}
+#aside{
+    left: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    height: 150px;
+    width: 30px;
+    transition: height 2s ease;
+    justify-items: center;
+    column-gap: 10px;
+}
+@media (max-width: 900px){
+    main{
+        column-count: 1;
+    }
+    footer{
+        flex-direction: column;
+        row-gap: 8rem;
+    }
+}
+nav{
+    height: 10vh;
+    display: flex;
+    padding: 0rem 8rem;
+    align-items: center;
+    column-gap: 4rem;
+}
+nav a{
+    text-decoration: none;
+    font-family: panther, sans-serif;
+}
+nav a:hover{
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+header summary{
+    height: 100vh;
+    padding: 0rem 12rem;
+    background-image: url("wakanda/Pantherwakanda1.png");
+    background-position: center;
+    background-size: 110% 116vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+summary p{
+    margin-top: 2rem;
+    width: 20rem;
+    font-size: small;
+}
+summary h1{
+    font-size: 50px;
+    transition: 0.3s font-size ease;
+}
+
+summary span{
+    font-size: 30px;
+    transition: 0.3s font-size ease;
+}
+main{
+    padding: 10rem 12rem;
+    background-image: url("wakanda/Pantherwakanda2.png");
+    background-size: 100% auto;
+    background-position-y: 0px;
+    background-position-x: center;
+    column-count: 2;
+    column-gap: 10rem;
+}
+section{
+    margin: 3rem 0rem;
+}
+main p{
+    text-align: justify;
+    font-family: "Verdana", sans-serif;
+    font-size: 11px;
+}
+h2{
+    font-family: "BEYNO";
+    font-size: 20px;
+    color: #9E91B7;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+#petitAffiche{
+    margin-top: 2rem;
+    width: 449px;
+    height: 263px;
+    background-image: url("wakanda/Pantherwakanda3.png");
+    background-position: center;
+    transition: background-size 1s ease;
+}
+footer{
+    padding: 4rem;
+    color: rgb(182, 182, 182);
+    background-image: linear-gradient(to bottom, #3D2DA6, #021740 40%);
+    column-gap: 8rem;
+    align-items: center;
+    display: flex;
+}
+#image{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("icones/icon_SaynaXMarvel.png");
+    height: 385px;
+    width: 330px;
+}
+#contact{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-row: 4fr 1fr;
+    column-gap: 14rem;
+    height: 40vh;
+}
+h3{
+    font-size: 18px;
+    letter-spacing: 12px;
+}
+.pinky{
+    color: #9E91B7;
+}
+.large{
+    font-size: x-large;
+}
+.medium{
+    font-size: medium;
+}
+.small {
+    font-size: smaller;
+}
+.beyno{
+    font-family: 'BEYNO', sans-serif;
+}
+.panther{
+    font-family: 'Panthera', sans-serif;
+}
+.cantarell {
+    font-family: 'Cantarell', sans-serif;
+}
+.wakanda
+{
+    font-family: 'Wakanda Forever', sans-serif;
+}
+.Verdana{
+    font-family: Verdana, sans-serif;
+    line-height: 1.5rem;
+}

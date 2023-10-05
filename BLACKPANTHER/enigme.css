@@ -1,0 +1,251 @@
+*{
+    box-sizing: border-box;
+    color: #FFFFFF;
+    margin: 0px;
+    padding: 0px;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    font-size: small;
+
+}
+body{
+    background-color: #070d18;
+    background-repeat: repeat;
+    background-image: linear-gradient(110deg, #11213F 0%, #070d18 30%, #070d18 50%, #021740 70%);
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width: 900px){
+    main{
+        column-count: 1;
+    }
+    footer{
+        flex-direction: column;
+        row-gap: 8rem;
+    }
+}
+header{
+    position: relative;
+}
+#aside{
+    left: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    height: 350px;
+    width: 30px;
+    justify-items: center;
+    column-gap: 10px;
+}
+nav{
+    height: 10vh;
+    display: flex;
+    padding: 0rem 8rem;
+    align-items: center;
+    column-gap: 4rem;
+}
+nav a{
+    text-decoration: none;
+    font-family: panther, sans-serif;
+}
+nav a:hover{
+    text-decoration: underline;
+    color: #ffffff;
+}
+header summary{
+    height: 100vh;
+    padding: 0rem 2rem 0rem 54rem;
+    background-image: url("enigme/Pantherenigme1.png");
+    background-position: center;
+    background-size: auto 120%;
+    background-position-x: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+summary div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 2rem;
+    margin-top: auto;
+    padding: 16rem;
+    width: 790px;
+    height: 502px;
+    font-size: small;
+    background-image: url("enigme/Pantherenigme2.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-position-x: 70px;
+    position: relative;
+}
+summary div p{
+    text-align: justify;
+    font-size: x-small;
+}
+summary h1{
+    margin-right: 10rem;
+    margin-top: 12rem;
+    font-size: 50px;
+    text-align: justify;
+}
+
+main{
+    padding: 10rem 12rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10rem;
+}
+
+main p{
+    text-align: justify;
+}
+h2{
+    font-size: 30px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+#enigme{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+#enigme input{
+    padding: 0.8rem;
+    border-radius: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    width: 30rem;
+    background-color: transparent;
+    border: 1px solid #F2CEF2;
+    color: #FFFFFF;
+    margin-left: 2rem;
+}
+#enigme button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1rem 3rem;
+    color: #070d18;
+    font-weight: 600;
+    border-radius: 3rem 3rem;
+    border: none;
+    background-color: #F2CEF2;
+}
+
+#enigme button:hover{
+    box-shadow: 0px 0px 10px 3px #F2CEF2;
+}
+
+#indice{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+}
+
+#indice img{
+    position: absolute;
+    top: 10%;
+    left: -15%;
+    width: 150%;
+    height: 80%;
+}
+#popUp{
+    position: fixed;
+    top: 20%;
+    left: 25%;
+    width: 50%;
+    height: 60%;
+    background-image: linear-gradient(to bottom, #3D2DA6, #021740);
+    display: none;
+    filter: blur(18px);
+}
+#conteneur{
+    width: 36%;
+    height: 46%;
+    position: fixed;
+    padding: 2rem 8rem;
+    top: 27%;
+    left: 32%;
+    background-image: linear-gradient(to bottom, #9E91B7, #3D2DA6, transparent);
+    border-radius: 1.5rem 1.5rem;
+    display: none;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    align-items: center;
+    justify-content: flex-start
+}
+#conteneur button{
+    background-color: #F2CEF2;
+    padding: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 1.5rem 1.5rem;
+    width: 160px;
+    color: #070d18;
+    border: none;
+}
+#conteneur button:hover{
+    box-shadow: 0px 0px 3px 3px #F2CEF2;
+}
+footer{
+    padding: 4rem;
+    color: rgb(182, 182, 182);
+    background-image: linear-gradient(to bottom, #3D2DA6, #021740 40%);
+    column-gap: 8rem;
+    align-items: center;
+    display: flex;
+}
+#image{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("icones/icon_SaynaXMarvel.png");
+    height: 385px;
+    width: 330px;
+}
+#contact{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-row: 4fr 1fr;
+    column-gap: 14rem;
+    height: 40vh;
+}
+h3{
+    font-size: 18px;
+    letter-spacing: 12px;
+}
+.pinky{
+    color: #9E91B7;
+}
+.large{
+    font-size: x-large;
+}
+.medium{
+    font-size: medium;
+}
+.small {
+    font-size: smaller;
+}
+.beyno{
+    font-family: 'BEYNO', sans-serif;
+}
+.panther{
+    font-family: 'Panthera', sans-serif;
+}
+.cantarell {
+    font-family: 'Cantarell', sans-serif;
+}
+.wakanda
+{
+    font-family: 'Wakanda Forever', sans-serif;
+}
+.Verdana{
+    font-family: Verdana, sans-serif;
+    line-height: 1.5rem;
+}
